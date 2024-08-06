@@ -12,9 +12,5 @@ public class Eleve {
         this.genre = genre;
     }
 
-    public String AjouterEleve(){
-        return ("Nouveau eleve:\n" + "Id:\t"+ this.id+ "Nom :\t"+ this.nom + "Prenom\t:"+this.prenom+ "Genre\t:"+this.genre);
-    }
-
 
 }

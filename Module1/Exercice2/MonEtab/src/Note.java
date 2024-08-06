@@ -14,4 +14,8 @@ public class Note {
         this.note = note;
     }
 
+    public String AjouterNote(){
+        return ("Note de \n"+ this.eleve + "Valeur:\n"+this.valeur + "Note\n:"+this.note
+        );
+    }
 }

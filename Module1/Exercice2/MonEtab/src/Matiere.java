@@ -8,5 +8,10 @@ public class Matiere {
         this.nom = nom;
     }
 
+    public String AjouterMatiere(){
+        return (" La matiere"+this.nom +" a bien ete ajoute");
+    }
+
+
 
 }
