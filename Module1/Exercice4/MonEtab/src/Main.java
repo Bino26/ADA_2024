@@ -1,17 +1,28 @@
 import java.util.Scanner;
 
 public class Main {
+
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         Utilisateur utilisateur = new Utilisateur();
 
-        if (utilisateur.authentification("admin", "admin")) {
+
+        System.out.println("******************************************************");
+        System.out.println("BIENVENU DANS L’APPLICATION ETAB v1.3");
+        System.out.println("******************************************************");
+        System.out.print("CONNEXION\nIdentifiant : ");
+        String username = scanner.nextLine();
+        System.out.print("Mot de passe : ");
+        String password = scanner.nextLine();
+
+        if (utilisateur.authentification(username, password)) {
             System.out.println("Connexion réussie!");
+
             int choice;
             do {
-                displayMainMenu();
+                displayMainMenu(scanner);
                 choice = scanner.nextInt();
-                scanner.nextLine();
+                scanner.nextLine(); // Consume newline
 
                 switch (choice) {
                     case 1 -> Eleve.displayEleveMenu(scanner);
@@ -26,9 +37,13 @@ public class Main {
         }
     }
 
-    private static void displayMainMenu() {
+    /**
+     *
+     * @param scanner
+     */
+    private static void displayMainMenu(Scanner scanner) {
         System.out.println("******************************************************");
-        System.out.println("BIENVENU DANS L’APPLICATION ETAB v1.2");
+        System.out.println("BIENVENU DANS L’APPLICATION ETAB v1.3");
         System.out.println("******************************************************");
         System.out.println("MENU:");
         System.out.println("1: Gestion des élèves");

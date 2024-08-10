@@ -3,6 +3,8 @@ import java.util.Date;
 import java.util.List;
 import java.util.Scanner;
 
+
+
 public class Eleve extends Personne implements ICRUDEleve {
     private String classe;
     private String matricule;
@@ -17,6 +19,11 @@ public class Eleve extends Personne implements ICRUDEleve {
         this.classe = classe;
         this.matricule = matricule;
     }
+
+    /**Diplasy : Eleve Menu
+     *
+     * @param scanner
+     */
 
     public static void displayEleveMenu(Scanner scanner) {
         int choice;
