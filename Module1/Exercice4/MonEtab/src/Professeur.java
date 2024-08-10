@@ -43,19 +43,17 @@ public class Professeur extends Personne implements IEducation, ICRUDProfesseur 
     }
 
     private static void displayMenu() {
-        System.out.println("******************************************************");
-        System.out.println("GESTION DES PROFESSEURS");
-        System.out.println("******************************************************");
-        System.out.println("Menu :");
-        System.out.println("1: Ajouter un professeur");
-        System.out.println("2: Supprimer un professeur");
-        System.out.println("3: Modifier les informations du professeur");
-        System.out.println("4: Lister les professeurs");
-        System.out.println("5: Obtenir le dernier professeur ajouté");
-        System.out.println("6: Retour");
-        System.out.println("0: Quitter");
-        System.out.println("******************************************************");
-        System.out.print("Choisissez une option: ");
+        System.out.println("******************************************************\n" +
+                "GESTION DES PROFESSEURS\n" +
+                "******************************************************\n" +
+                "Menu :\n" +
+                "1: Ajouter un professeur\n" +
+                "2: Supprimer un professeur\n" +
+                "3: Modifier les informations du professeur\n" +
+                "4: Lister les professeurs\n" +
+                "5: Retour\n" +
+                "0: Accueil\n");
+
     }
 
     @Override
@@ -129,7 +127,7 @@ public class Professeur extends Personne implements IEducation, ICRUDProfesseur 
     private static void modifierProfesseur(Scanner scanner) {
         System.out.print("Entrez l'identifiant du professeur à modifier: ");
         int id = scanner.nextInt();
-        scanner.nextLine(); // Consume newline
+        scanner.nextLine();
         Professeur professeur = new Professeur().obtenir(id);
         if (professeur != null) {
             System.out.print("Nouveau nom: ");

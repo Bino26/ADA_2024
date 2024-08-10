@@ -42,15 +42,15 @@ public class Main {
      * @param scanner
      */
     private static void displayMainMenu(Scanner scanner) {
-        System.out.println("******************************************************");
-        System.out.println("BIENVENU DANS L’APPLICATION ETAB v1.3");
-        System.out.println("******************************************************");
-        System.out.println("MENU:");
-        System.out.println("1: Gestion des élèves");
-        System.out.println("2: Gestion des professeurs");
-        System.out.println("3: Gestion des utilisateurs");
-        System.out.println("0: Quitter");
-        System.out.println("******************************************************");
-        System.out.print("Choisissez une option dans le menu: ");
+        System.out.println("******************************************************\n" +
+                "BIENVENU DANS L’APPLICATION ETAB v1.3\n" +
+                "******************************************************\n" +
+                "MENU:\n" +
+                "1: Gestion des élèves\n" +
+                "2: Gestion des professeurs\n" +
+                "3: Gestion des utilisateurs\n" +
+                "0: Quitter\n" +
+                "Date système : 12:30\n");
+
     }
 }

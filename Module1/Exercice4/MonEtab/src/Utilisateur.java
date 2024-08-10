@@ -27,18 +27,16 @@ public class Utilisateur {
     }
 
     private void displayMenu() {
-        System.out.println("******************************************************");
-        System.out.println("GESTION DES UTILISATEURS");
-        System.out.println("******************************************************");
-        System.out.println("Menu :");
-        System.out.println("1: Ajouter un utilisateur");
-        System.out.println("2: Supprimer un utilisateur");
-        System.out.println("3: Modifier les informations d'un utilisateur");
-        System.out.println("4: Lister les utilisateurs");
-        System.out.println("5: Retour");
-        System.out.println("0: Quitter");
-        System.out.println("******************************************************");
-        System.out.print("Choisissez une option: ");
+        System.out.println("******************************************************\n" +
+                "GESTION DES UTILISATEURS\n" +
+                "******************************************************\n" +
+                "Menu :\n" +
+                "1: Ajouter un utilisateur\n" +
+                "2: Supprimer un utilisateur\n" +
+                "3: Modifier les informations d’un utilisateur\n" +
+                "4: Lister les utilisateurs\n" +
+                "5: Retour\n" +
+                "0: Accueil");
     }
 
     private void ajouterUtilisateur(Scanner scanner) {

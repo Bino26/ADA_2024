@@ -46,19 +46,17 @@ public class Eleve extends Personne implements ICRUDEleve {
     }
 
     private static void displayMenu() {
-        System.out.println("******************************************************");
-        System.out.println("GESTION DES ELEVES");
-        System.out.println("******************************************************");
-        System.out.println("Menu :");
-        System.out.println("1: Ajouter un élève");
-        System.out.println("2: Supprimer un élève");
-        System.out.println("3: Modifier les informations de l'élève");
-        System.out.println("4: Lister les élèves");
-        System.out.println("5: Obtenir le dernier élève ajouté");
-        System.out.println("6: Retour");
-        System.out.println("0: Quitter");
-        System.out.println("******************************************************");
-        System.out.print("Choisissez une option: ");
+        System.out.println("******************************************************\n" +
+                "GESTION DES ELEVES\n" +
+                "******************************************************\n" +
+                "Menu :\n" +
+                " 1: Ajouter un élève\n" +
+                " 2: Supprimer un élève\n" +
+                " 3: Modifier les informations de l'élève\n" +
+                " 4: Lister les élèves\n" +
+                " 5: Retour\n" +
+                " 0: Quitter");
+
     }
 
     @Override
