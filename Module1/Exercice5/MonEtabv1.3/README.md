@@ -15,7 +15,7 @@ This repository contains the source code for a Java Console App implementing the
      git clone https://github.com/Bino26/ADA_2024
     ```
 
-2. Go to project repository :
+2. Go to project repository and open it with the editor of your choice :
     ```bash
      cd ADA_2024/Exercice5/MonEtabv1.3
     ```
