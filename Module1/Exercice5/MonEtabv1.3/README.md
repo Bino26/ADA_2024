@@ -29,7 +29,10 @@ Be sure , to  add it , if you don't have this before , you can download it at th
 [MySQL Community Downloads](https://dev.mysql.com/downloads/connector/j/?os=26).
 
 
-2. Launch the console App :
+2. Import the database :
+-  All required database files are located in the `src/db` directory.
+-  
+3. Launch the console App :
 
 - Now launch the console app by clicking of the play button in your app .
 - In the connexion interface , enter those credentials for testing :
@@ -39,8 +42,9 @@ identifiant=admin
 motdepasse=admin
 ```
       
-## Contributing
-We welcome contributions! If you find a bug or have a feature request, please open an issue. Feel free to fork the repository and submit pull requests.
+## Warning
 
-## License
-This project is licensed under the [MIT License](LICENSE).
+⚠️ **Be sure to import the database and install mysql-connector before launching the program.**
+
+Failure to do so may result in runtime errors or incomplete functionality.
+
