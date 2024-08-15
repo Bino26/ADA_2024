@@ -1,11 +1,11 @@
 # MonEtab v1.3
 
-This repository contains the source code for a Java Console App implementing the managament of a school. 
+This repository contains the source code for a Java Console App implementing the management of a school. 
 
 ## Features
 - Register User
 - Register Student and Teachers
-- Add Courses
+- Add Courses...
 
 
 ## Getting Started
@@ -23,15 +23,16 @@ This repository contains the source code for a Java Console App implementing the
 ## Running the App
 
 1.Install the dependencies :
-- Add your package `mysql-connector` for interact with your database with JDBC .
+- Add your package `mysql-connector` for interact with your database with JDBC . You can find him in `src/jar`
 
-Be sure , to  add it , if you don't have this before , you can download it at this link : 
+Be sure , to  add it , if you don't have this before , you can aslo download latest version at this link : 
 [MySQL Community Downloads](https://dev.mysql.com/downloads/connector/j/?os=26).
 
 
 2. Import the database :
 -  All required database files are located in the `src/db` directory.
--  
+-  Import the database in your database app .
+  
 3. Launch the console App :
 
 - Now launch the console app by clicking of the play button in your app .
