@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang=fr>
+<head>
+<meta charset=UTF-8>
+<title>Mon Etab - Élèves</title>
+<link rel=stylesheet href=styles.css>
+</head>
+<body>
+<div class=sidebar>
+<h2>Mon Etab</h2>
+<ul>
+<li><a href=./dashboardPage.html>Tableau de bord</a></li>
+<li><a href=./studentPage.html>Élèves</a></li>
+<li><a href=./professorPage.html>Professeurs</a></li>
+<li><a href=#>Utilisateurs</a></li>
+<li><a href=#>Rapport</a></li>
+</ul>
+<a href=# id=logout class=logout-btn>Déconnexion</a>
+</div>
+<div class=main-content>
+<h1>Utilisateurs (2)</h1>
+<button id=addStudent>+ Nouveau utilisateur</button>
+<table>
+<thead>
+<tr>
+<th>Pseudo</th>
+<th>Date de creation</th>
+<th>Actions</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Admin</td>
+<td>17/04/1995</td>
+<td>
+<button onclick="confirmModify()">Modifier</button>
+</td>
+</tr>
+<tr>
+<td>Admin</td>
+<td>17/04/1995</td>
+<td>
+<button onclick="confirmModify()">Modifier</button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<script src=script.js></script>
+</body>
+</html>
